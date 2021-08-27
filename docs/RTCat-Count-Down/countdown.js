@@ -14,6 +14,6 @@ var x = setInterval(function(){
     if(distance < 0){
         clearInterval(x);
         document.getElementById("timer").style.fontFamily = "'Noto Sans TC', sans-serif";
-        document.getElementById("timer").innerHTML = "貓貓羅正式出獄！！";
+        document.getElementById("timer").innerHTML = "貓貓羅正式回歸！！";
     }
 }, 1000)
