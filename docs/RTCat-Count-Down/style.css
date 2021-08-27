@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Quicksand&display=swap');
+/*
+font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+body{
+    background-color: #747d8c;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.bg{
+    height: 101vh;
+    width: 101%;
+    background-image: url(images/icon.jpg);
+    background-size: cover;
+    filter: blur(5px) brightness(.7) saturate(.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -99;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3vmin;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #000;
+    flex: 1;
+}
+.en{
+    text-align: center;
+    color: #fff;
+    font-size: 2.6vmin;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #000;
+    flex: 1;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.imgBox{
+    max-width: 50%;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    margin: 5% 0;
+}
+.imgBox img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+h3{
+    text-align: center;
+    color: #fff;
+    font-size: 2.2vmin;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #000;
+    flex: 1;
+}
+p#timer{
+    text-align: center;
+    font-size: 6vmin;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    flex: 1;
+}
+.author{
+    color: #fff;
+    text-align: center;
+    font-size: 1.6vmin;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+}
+@media only screen and (orientation: landscape){
+    .content{
+        max-height: 50%;
+    }
+    .imgBox{
+        width: auto;
+        max-height: 100%;
+        max-width: none;
+    }
+    .imgBox img{
+        max-height: 100%;
+        width: auto;
+    }
+}
