@@ -53,18 +53,28 @@ h1{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 10px 0;
     flex: 1;
 }
 .imgBox{
     max-width: 50%;
     height: auto;
     box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-    margin: 5% 0;
 }
 .imgBox img{
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+h2#count{
+    text-align: center;
+    color: #fff;
+    font-size: 4vmin;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #000;
+    flex: .5;
+    margin: 0;
 }
 h3{
     text-align: center;
@@ -74,7 +84,7 @@ h3{
     font-weight: 400;
     letter-spacing: 2px;
     text-shadow: 0 0 10px #000;
-    flex: 1;
+    flex: .5;
     margin: 0;
 }
 p#timer{
@@ -100,7 +110,6 @@ p#timer{
     left: 0;
     width: 100%;
     padding: 5px 0;
-    margin: 0;
 }
 @media only screen and (orientation: landscape){
     .content{
@@ -108,7 +117,7 @@ p#timer{
     }
     .imgBox{
         width: auto;
-        max-height: 100%;
+        max-height: 80%;
         max-width: none;
     }
     .imgBox img{
