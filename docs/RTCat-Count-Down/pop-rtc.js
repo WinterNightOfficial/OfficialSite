@@ -7,6 +7,8 @@ window.onload = function(){
 }
 
 function PopRTCDown(){
+    var audio = document.getElementById("pop");
+    audio.play();
     document.getElementById("imgBox").src = "images/icon-large.png";
 }
 function PopRTCUp(){
