@@ -1,4 +1,13 @@
 window.onload = function(){
+    //Birthday
+    var today = new Date().getDate();
+    var birthday = new Date("January 26").getDate();
+
+    if (today == birthday){
+        window.alert("貓貓羅生日快樂！\nRTCat Happy Birthday!");
+    }
+    
+    //Pop-Cat
     var imgBox = document.getElementById("imgBoxBtn");
     var count = 0;
 
