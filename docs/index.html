@@ -18,14 +18,6 @@
     <title>夜雪羽官方形象網站</title>
 </head>
 <body>
-    
-    <!--
-        Music: All The Tea In China by Shane Ivers - https://www.silvermansound.com​
-        Promoted by BreakingCopyright: http://bit.ly/Savfk-TheGrid
-    -->
-    <div class="bgm" style="display: none; position: fixed; z-index: -9999;">
-        <iframe src="https://www.youtube.com/embed/Bx4PGlasQBo?controls=1&autoplay=1&loop=1&playlist=Bx4PGlasQBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
 
     <div class="container" id="main">
 
@@ -35,14 +27,15 @@
 
             <div class="container">
                 <div class="content">
-                    <img src="images/winternight.png" alt="winternight.png">
+                    <img src="images/winternight.png" alt="winternight.png" class="mainLogo">
+                    <img src="images/2022/4rd.png" alt="winternight.png" class="subLogo">
                 </div>
 
                 <div class="content">
                     <p>
-                        <span class="mainTitle">夜雪羽</span>
+                        <span class="mainTitle" id="homeTitle"></span>
                         <br>
-                        <span class="mainText">友善交流的平安京休閒寮辦</span>
+                        <span class="mainText">共同迎接寮辦創立四週年</span>
                     </p>
                 </div>
             </div>
@@ -56,6 +49,9 @@
                 <div class="content">
                     <a href="https://forum.gamer.com.tw/Co.php?bsn=33068&sn=5328" target="_blank">
                         <p>【常駐】巴哈開放招生</p>
+                    </a>
+                    <a href="News/News-4rd.html">
+                        <p>【公告】夜雪羽創立四週年</p>
                     </a>
                     <a href="News/News-CNY.html" target="_blank">
                         <p>【公告】新年快樂、諸事如意</p>
@@ -210,6 +206,7 @@
 
     </div>
 
+    <!--Script-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" 
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
     crossorigin="anonymous"></script>
@@ -220,6 +217,18 @@
                 $('nav').toggleClass('active');
             })
         })
+    </script>
+
+    <script src="Scripts/typed.js"></script>
+    <script>
+        var typed = new Typed('#homeTitle', {
+            strings: [
+                "平安京", "夜雪羽", "四週年"
+            ],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: true
+        });
     </script>
 </body>
 </html>

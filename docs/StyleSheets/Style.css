@@ -65,7 +65,7 @@ body{
     top: 0;
     left: 0;
     z-index: -99;
-    background-image: url(../images/mountain.jpg);
+    background-image: url(../images/2022/Home2022.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -101,6 +101,65 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+}
+/*Animation*/
+.mainLogo
+{
+    animation-name: fadeMain;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeMain
+{
+    0%
+    {
+        opacity: 100%;
+        filter: blur(0);
+    }
+    40%
+    {
+        opacity: 0%;
+        filter: blur(10px);
+    }
+    60%
+    {
+        opacity: 0%;
+        filter: blur(10px);
+    }
+    100%
+    {
+        opacity: 100%;
+        filter: blur(0);
+    }
+}
+.subLogo
+{
+    animation-name: fadeSub;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeSub
+{
+    0%
+    {
+        opacity: 0%;
+        filter: blur(10px);
+    }
+    40%
+    {
+        opacity: 100%;
+        filter: blur(0);
+    }
+    60%
+    {
+        opacity: 100%;
+        filter: blur(0);
+    }
+    100%
+    {
+        opacity: 0%;
+        filter: blur(10px);
+    }
 }
 #news{
     width: 100%;
@@ -172,7 +231,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../images/street.jpg);
+    background-image: url(../images/2022/About2022.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -309,7 +368,7 @@ body{
     top: 0;
     left: 0;
     z-index: -99;
-    background-image: url(../images/sakura.jpg);
+    background-image: url(../images/2022/JoinUs2022.webp);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
